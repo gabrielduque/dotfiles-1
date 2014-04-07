@@ -15,6 +15,7 @@ call vundle#rc()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/vundle'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'plasticboy/vim-markdown'
 Plugin 'sickill/vim-monokai'
 colorscheme monokai
 
