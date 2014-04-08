@@ -1,9 +1,17 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
 set term=xterm-256color
 syntax enable
 set nu
+set hls
+set is
+set ruler
 
-set nocompatible              " be iMproved, required
-filetype off                  " required
+" In many terminal emulators the mouse works just fine, thus enable it.
+if has('mouse')
+  set mouse=a
+endif
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
