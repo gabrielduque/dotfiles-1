@@ -22,6 +22,7 @@ call vundle#rc()
 "call vundle#rc(path)
 
 " let Vundle manage Vundle, required
+Plugin 'WolfgangMehner/vim-plugins'
 Plugin 'gmarik/vundle'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/nerdtree'
