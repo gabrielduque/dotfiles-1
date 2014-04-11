@@ -3,11 +3,12 @@ filetype off                  " required
 
 set term=xterm-256color
 syntax enable
-set nu
-set hls
-set is
+set number
+set hlsearch
+set incsearch
 set ruler
 set ts=4
+set noswapfile
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
@@ -22,7 +23,10 @@ call vundle#rc()
 "call vundle#rc(path)
 
 " let Vundle manage Vundle, required
+Plugin 'tpope/vim-fugitive'
 Plugin 'WolfgangMehner/vim-plugins'
+Plugin 'jaxbot/github-issues'
+Plugin 'vim-scripts/AutoComplPop'
 Plugin 'gmarik/vundle'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/nerdtree'
