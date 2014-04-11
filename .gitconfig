@@ -5,5 +5,5 @@
 	ui = auto
 [alias]
 	co = checkout
-	li = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+	li = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an<%ae>, %ar%Creset'
 	ll = log --graph --pretty=oneline --decorate --abbrev-commit
