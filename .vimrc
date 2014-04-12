@@ -23,7 +23,6 @@ call vundle#rc()
 "call vundle#rc(path)
 
 " let Vundle manage Vundle, required
-Plugin 'tpope/vim-fugitive'
 Plugin 'WolfgangMehner/vim-plugins'
 Plugin 'jaxbot/github-issues'
 Plugin 'vim-scripts/AutoComplPop'
