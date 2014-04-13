@@ -1,5 +1,5 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible " be iMproved, required
+filetype off     " required
 
 set term=xterm-256color
 syntax enable
@@ -23,26 +23,21 @@ call vundle#rc()
 "call vundle#rc(path)
 
 " let Vundle manage Vundle, required
+Plugin 'sirver/ultisnips'
+Plugin 'honza/vim-snippets'
 Plugin 'WolfgangMehner/vim-plugins'
-Plugin 'jaxbot/github-issues'
 Plugin 'vim-scripts/AutoComplPop'
 Plugin 'gmarik/vundle'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/nerdtree'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'sickill/vim-monokai'
 colorscheme monokai
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 filetype plugin indent on     " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
-"
-" Brief help
-" :PluginList          - list configured plugins
-" :PluginInstall(!)    - install (update) plugins
-" :PluginSearch(!) foo - search (or refresh cache first) for foo
-" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
-"
-" see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Plugin commands are not allowed.
-" Put your stuff after this line
+
