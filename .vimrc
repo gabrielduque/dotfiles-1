@@ -9,6 +9,10 @@ set incsearch
 set ruler
 set ts=4
 set noswapfile
+set cursorline
+set title
+set clipboard=unnamed
+
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
@@ -23,10 +27,12 @@ call vundle#rc()
 "call vundle#rc(path)
 
 " let Vundle manage Vundle, required
+Plugin 'Shougo/neocomplete'
+Plugin 'vim-scripts/taglist.vim'
 Plugin 'vim-scripts/bash-support.vim'
 Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'vim-scripts/AutoComplPop'
+"Plugin 'vim-scripts/AutoComplPop'
 Plugin 'gmarik/vundle'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/nerdtree'
@@ -36,6 +42,8 @@ colorscheme monokai
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+nnoremap <silent> <F8> :TlistToggle<CR>
 
 filetype plugin indent on     " required
 " To ignore plugin indent changes, instead use:
