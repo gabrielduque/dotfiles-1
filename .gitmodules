@@ -10,9 +10,6 @@
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule ".vim/bundle/vim-plugins"]
-	path = .vim/bundle/vim-plugins
-	url = https://github.com/WolfgangMehner/vim-plugins.git
 [submodule ".vim/bundle/AutoComplPop"]
 	path = .vim/bundle/AutoComplPop
 	url = https://github.com/vim-scripts/AutoComplPop.git
@@ -22,3 +19,6 @@
 [submodule ".vim/bundle/vim-snippets"]
 	path = .vim/bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets
+[submodule ".vim/bundle/bash-support.vim"]
+	path = .vim/bundle/bash-support.vim
+	url = https://github.com/vim-scripts/bash-support.vim

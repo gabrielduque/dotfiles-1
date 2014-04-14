@@ -23,9 +23,9 @@ call vundle#rc()
 "call vundle#rc(path)
 
 " let Vundle manage Vundle, required
+Plugin 'vim-scripts/bash-support.vim'
 Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'WolfgangMehner/vim-plugins'
 Plugin 'vim-scripts/AutoComplPop'
 Plugin 'gmarik/vundle'
 Plugin 'terryma/vim-multiple-cursors'
