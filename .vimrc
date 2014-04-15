@@ -1,8 +1,6 @@
-set nocompatible " be iMproved, required
-filetype off     " required
-
+" ================ General Configuration ========================
 set term=xterm-256color
-syntax enable
+syntax on
 set number
 set hlsearch
 set incsearch
@@ -12,40 +10,15 @@ set noswapfile
 set cursorline
 set title
 set clipboard=unnamed
+set autoread
+set foldmethod=syntax
 
-
-" In many terminal emulators the mouse works just fine, thus enable it.
-if has('mouse')
-  set mouse=a
+" =============== Vundle Initialization ===============
+" This loads all the plugins specified in ~/.vim/vundle.vim
+" Use Vundle plugin to manage all other plugins
+if filereadable(expand("~/.vim/vundles.vim"))
+  source ~/.vim/vundles.vim
 endif
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-" alternatively, pass a path where Vundle should install plugins
-"let path = '~/some/path/here'
-"call vundle#rc(path)
-
-" let Vundle manage Vundle, required
-Plugin 'Shougo/neocomplete'
-Plugin 'vim-scripts/taglist.vim'
-Plugin 'vim-scripts/bash-support.vim'
-Plugin 'sirver/ultisnips'
-Plugin 'honza/vim-snippets'
-"Plugin 'vim-scripts/AutoComplPop'
-Plugin 'gmarik/vundle'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'scrooloose/nerdtree'
-Plugin 'sickill/vim-monokai'
-colorscheme monokai
-
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
-nnoremap <silent> <F8> :TlistToggle<CR>
-
-filetype plugin indent on     " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-
+" ================ Custom Settings ========================
+source ~/.vim/settings.vim
