@@ -8,3 +8,5 @@ A repository to keep my dotfiles safe, versioned and synchronized.
     TODO
 ###Usage
     TODO
+###License
+    TODO
