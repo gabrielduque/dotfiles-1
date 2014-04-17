@@ -14,5 +14,6 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sickill/vim-monokai'
 Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-surround'
 
 filetype plugin indent on     " required
