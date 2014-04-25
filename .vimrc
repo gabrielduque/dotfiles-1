@@ -5,13 +5,16 @@ set number
 set hlsearch
 set incsearch
 set ruler
-set ts=4
 set noswapfile
 set cursorline
 set title
 set clipboard=unnamed
 set autoread
 set foldmethod=syntax
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 
 if has("gui_running")
   " GUI is running or is about to start.
