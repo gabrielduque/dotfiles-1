@@ -1,4 +1,4 @@
 set -o vi
 export EDITOR="vim"
-export PAGER="vim"
+export PAGER="less"
 export VISUAL="vim"
