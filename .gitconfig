@@ -9,3 +9,5 @@
 	ll = log --graph --pretty=oneline --decorate --abbrev-commit
 [core]
 	autocrlf = input
+[push]
+	default = simple
