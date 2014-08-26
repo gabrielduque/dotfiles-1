@@ -5,8 +5,8 @@
 	ui = auto
 [alias]
 	co = checkout
-	li = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an<%ae>, %ar%Creset'
 	ll = log --graph --pretty=oneline --decorate --abbrev-commit
+	li = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s - %C(yellow)%an<%ae>%C(white), %ar%Creset'
 [core]
 	autocrlf = input
 [push]
