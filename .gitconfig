@@ -9,5 +9,3 @@
 	li = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s - %C(yellow)%an<%ae>%C(white), %ar%Creset'
 [core]
 	autocrlf = input
-[push]
-	default = simple
