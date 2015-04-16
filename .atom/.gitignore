@@ -1,0 +1,3 @@
+.node-gyp/
+.apm/
+compile-cache/
