@@ -3,10 +3,10 @@ Dotfiles
 A repository to keep my dotfiles safe, versioned and synchronized.
 
 ###Features
-    TODO
+  git   TODO
 ###Installation
-    TODO
+  git  TODO
 ###Usage
-    TODO
+ git    TODO
 ###License
-    TODO
+ git   TODO
